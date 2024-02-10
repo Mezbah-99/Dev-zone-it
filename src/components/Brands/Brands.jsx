@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination, Scrollbar } from "swiper/modules";
+import "swiper/css";
 
 const Brands = () => {
   return (
-    <section className="py-5">
+    <section className="py-5 brands">
       <div className="container">
         <div className="row">
           <div className="col-md-12 text-center">
@@ -10,51 +14,73 @@ const Brands = () => {
           </div>
         </div>
         <div className="row">
-          <div className="owl-carousel owl-theme mt-2">
+          <div className="mt-2">
             <div className="item mb-4">
-              <div className="card border-0 mr-5 mt-2">
-                <img
-                  src="images/institute/i1.png"
-                  className="img-fluid me-5"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="item mb-4">
-              <div className="card border-0 mr-5 mt-2">
-                <img
-                  src="images/institute/i2.png"
-                  className="img-fluid me-5"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="item mb-4">
-              <div className="card border-0 mr-5 mt-2">
-                <img
-                  src="images/institute/i3.png"
-                  className="img-fluid me-5"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="item mb-4">
-              <div className="card border-0 mr-5 mt-2">
-                <img
-                  src="images/institute/i4.png"
-                  className="img-fluid me-5"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="item mb-4">
-              <div className="card border-0 mr-5 mt-2">
-                <img
-                  src="images/institute/i5.png"
-                  className="img-fluid me-5"
-                  alt=""
-                />
-              </div>
+              <Swiper
+                modules={[Autoplay, Pagination, Scrollbar]}
+                spaceBetween={25}
+                slidesPerView={5}
+                // navigation={true}
+                pagination={{ clickable: true }}
+                scrollbar={{ draggable: true }}
+                loop={true}
+                autoplay={{ delay: 500, disableOnInteraction: false }}
+              >
+                <SwiperSlide>
+                  <div className="card border-0 mr-5 mt-2">
+                    <img
+                      src="images/institute/i1.png"
+                      className="img-fluid me-5"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="card border-0 mr-5 mt-2">
+                    <img
+                      src="images/institute/i2.png"
+                      className="img-fluid me-5"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="card border-0 mr-5 mt-2">
+                    <img
+                      src="images/institute/i3.png"
+                      className="img-fluid me-5"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="card border-0 mr-5 mt-2">
+                    <img
+                      src="images/institute/i4.png"
+                      className="img-fluid me-5"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="card border-0 mr-5 mt-2">
+                    <img
+                      src="images/institute/i5.png"
+                      className="img-fluid me-5"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="card border-0 mr-5 mt-2">
+                    <img
+                      src="images/institute/i2.png"
+                      className="img-fluid me-5"
+                      alt=""
+                    />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         </div>

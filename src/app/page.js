@@ -20,7 +20,7 @@ export default function Home() {
       <AdmissionServices/>
       <IncludedServices/>
       <TrendingCourses/>
-      {/* <Brands/> */}
+      <Brands/>
       <Testimonials/>
     </div>
   );

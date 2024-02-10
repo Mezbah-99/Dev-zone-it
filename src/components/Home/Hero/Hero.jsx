@@ -23,6 +23,8 @@ const Hero = () => {
               যোগাযোগ করুন
               <img src="images/button.png" className="img-fluid" alt="" />
             </Link>
+
+            <button className="btn-primary">ব্রাউজ কোর্স</button>
             <ul className="mt-5 p-0 m-0 d-flex">
               <li className="me-5">
                 ৫০০০+ <span className="fs-5 d-block xs-fs-3">শিক্ষার্থী</span>
