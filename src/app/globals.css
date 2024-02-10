@@ -1,6 +1,6 @@
-@font-face {
+/* @font-face {
   src: local("font/SutonnyMJ-Bold.ttf");
-}
+} */
 /*font-family: 'Poppins', sans-serif;*/
 * {
   /*font-family: 'Poppins', sans-serif;*/
@@ -816,10 +816,12 @@ a:hover {
   line-height: 32px;
 }
 .arrow {
-  font-size: 22px;
+  font-size: 45px;
   background-color: white;
   padding: 13px 15px;
   border-radius: 50px;
+  color: #000;
+  cursor: pointer;
 }
 /*background-image: url('vector.png');*/
 .under-footer {
@@ -836,6 +838,7 @@ a:hover {
   background: #091423;
   height: 80%;
   position: relative;
+  margin-top: 200px !important;
 }
 .footer-p {
   font-size: 17px;
@@ -870,9 +873,11 @@ a:hover {
 .social-icon {
   background: #1778f2;
   border-radius: 50px;
-  padding: 8px 10px;
-  font-size: 20px;
+  padding: 10px 5px;
+  font-size: 30px;
   color: white;
+  height: 1.5em;
+  width: 1.5em;
 }
 .social-icon-t {
   background: #2daae1;

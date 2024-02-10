@@ -1,9 +1,13 @@
 import Link from "next/link";
 import React from "react";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className="py-5 footer-bg text-white mt-5">
+    <section style={{top: "100px"}} className="py-5 footer-bg text-white mt-5">
       <div className="container">
         <div className="row under-footer text-center d-flex align-items-center">
           {/*            <div class="col-md-3"></div>*/}
@@ -36,16 +40,21 @@ const Footer = () => {
                 </p>
                 <div className="mt-4">
                   <Link href="https://facebook.com" target="_blank">
-                    <i className="fa-brands fa-facebook-f social-icon me-2" />
+                    {/* <i className="fa-brands fa-facebook-f social-icon me-2" /> */}
+                    <FaFacebookF className="fa-facebook-f social-icon me-2"/>
+                    
                   </Link>
                   <Link href="https://twitter.com" target="_blank">
-                    <i className="fa-brands fa-twitter social-icon social-icon-t me-2" />
+                    {/* <i className="fa-brands fa-twitter social-icon social-icon-t me-2" /> */}
+                    <FaTwitter className="fa-brands fa-twitter social-icon social-icon-t me-2"/>
                   </Link>
                   <Link href="https://linkedin.com" target="_blank">
-                    <i className="fa-brands fa-linkedin-in social-icon social-icon me-2" />
+                    {/* <i className="fa-brands fa-linkedin-in social-icon social-icon me-2" /> */}
+                    <FaLinkedinIn className="fa-brands fa-linkedin-in social-icon social-icon me-2"/>
                   </Link>
                   <Link href="https://youtube.com" target="_blank">
-                    <i className="fa-brands fa-youtube social-icon social-icon-y me-2" />
+                    {/* <i className="fa-brands fa-youtube social-icon social-icon-y me-2" /> */}
+                    <FaYoutube className="fa-brands fa-youtube social-icon social-icon-y me-2"/>
                   </Link>
                 </div>
               </div>

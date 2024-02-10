@@ -1,13 +1,14 @@
-// import { Inter } from "next/font/google";
+import { Inter } from "next/font/google";
+
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 
 import "bootstrap/dist/css/bootstrap.css";
 
-import "./globals.css";
-// import "../css/customcss.css";
+const inter = Inter({ subsets: ["latin"] });
 
-// const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata = {
   title: "Top-it-institute",
@@ -17,9 +18,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={inter.className}>
+        <NextTopLoader color="#ED1C24" height={2} speed={200} showSpinner={false}/>
         <Header />
-        <div style={{marginTop: "100px"}}>{children}</div>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
