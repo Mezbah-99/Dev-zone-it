@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextTopLoader color="#ED1C24" height={2} speed={200} showSpinner={false}/>
+        <NextTopLoader color="#06D889" height={2} speed={200} showSpinner={false}/>
         <Header />
         <div>{children}</div>
         <Footer />

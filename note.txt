@@ -1,2 +1,3 @@
 https://web-dev-it.netlify.app/
 https://github.com/jayeedwebdevloper/web-dev-it-front-end
+devzoneit.vercel.app

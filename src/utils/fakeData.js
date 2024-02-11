@@ -1,4 +1,4 @@
-const fakeCourses = [
+export const fakeCourses = [
   {
     id: 1,
     title: "গ্রাফিক ডিজাইন",

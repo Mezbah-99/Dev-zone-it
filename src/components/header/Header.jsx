@@ -57,15 +57,14 @@ const Header = () => {
               </li>
               <li className="nav__item">
                 <Link
-                  href="/contact"
+                  href="/courses"
                   className={
-                    path === "/contact"
+                    path === "/courses"
                       ? "nav__link" + " nav__cta"
                       : "nav__link"
                   }
-                  onClick={closeMenuOnMobile}
                 >
-                  Contact
+                  Visit courses
                 </Link>
               </li>
               <li className="nav__item">
@@ -85,7 +84,9 @@ const Header = () => {
                 <Link
                   href="/blogs"
                   className={
-                    path === "/blogs" ? "nav__link" + " nav__cta" : "nav__link"
+                    path === "/blogs"
+                      ? "nav__link" + " nav__cta"
+                      : "nav__link btn-primary reverse"
                   }
                   onClick={closeMenuOnMobile}
                 >
@@ -98,8 +99,8 @@ const Header = () => {
                   href="/free-seminar"
                   className={
                     path === "/free-seminar"
-                      ? "nav__link" + " nav__cta"
-                      : "nav__link"
+                      ? "nav__link" + " btn-primary"
+                      : "nav__link btn-primary"
                   }
                   onClick={closeMenuOnMobile}
                 >
@@ -108,14 +109,15 @@ const Header = () => {
               </li>
               <li className="nav__item">
                 <Link
-                  href="/courses"
+                  href="/contact"
                   className={
-                    path === "/courses"
+                    path === "/contact"
                       ? "nav__link" + " nav__cta"
-                      : "nav__link"
+                      : "nav__link nav__cta"
                   }
+                  onClick={closeMenuOnMobile}
                 >
-                  Visit courses
+                  Contact
                 </Link>
               </li>
             </ul>

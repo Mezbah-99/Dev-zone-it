@@ -127,10 +127,13 @@
 .show-menu {
   right: 0;
 }
-.nav__listt {
+.nav__list {
   display: flex;
   flex-direction: row;
   column-gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
 .nav__menu_mobile {
