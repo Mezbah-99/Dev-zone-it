@@ -13,18 +13,15 @@ const Hero = () => {
               প্রস্তুত আপনার ক্যারিয়ার গড়ার অগ্রযাত্রায়। আমাদের ৩০টিরও বেশি
               ট্রেন্ডি কোর্স থেকে আজই বেছে নিন আপনার পছন্দের কোর্স।
             </p>
-            <Link href="/courses" className="btn btn-danger px-4 py-3 me-3">
-              ব্রাউজ কোর্স
-            </Link>
-            <Link
-              href="/contact"
-              className="btn btn-outline-danger px-4 py-3 text-white"
-            >
-              যোগাযোগ করুন
-              <img src="images/button.png" className="img-fluid" alt="" />
-            </Link>
-
-            <button className="btn-primary">ব্রাউজ কোর্স</button>
+            <div className="w-75 gap-3 d-flex">
+              <button className="btn-primary w-50">ব্রাউজ কোর্স</button>
+              <button className="btn-primary reverse w-50">
+                <span>ব্রাউজ কোর্স</span>
+                <span>
+                  <img src="images/button.png" className="img-fluid" alt="" />
+                </span>
+              </button>
+            </div>
             <ul className="mt-5 p-0 m-0 d-flex">
               <li className="me-5">
                 ৫০০০+ <span className="fs-5 d-block xs-fs-3">শিক্ষার্থী</span>

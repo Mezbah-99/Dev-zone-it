@@ -1,3 +1,11 @@
+:root{
+  --themeColor: #06D889;
+  --textLight: #EAF1F5;
+  --bgDark: #000000;
+  --themeColor2: #00BFF6;
+}
+
+
 /* @font-face {
   src: local("font/SutonnyMJ-Bold.ttf");
 } */
@@ -2474,14 +2482,13 @@ a:hover {
 /* Animation Button  */
 .btn-primary {
   /* font-family: var(--font-secondary); */
+  height: 60px !important;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: .03em;
-  /* color: var(--black); */
   color: #000;
   border-radius: 5px;
-  /* background-color: var(--primary); */
-  background-color: #007bff;
+  background-color: var(--themeColor);
   height: 40px;
   display: inline-block;
   transition: .5s;
@@ -2495,12 +2502,11 @@ a:hover {
   box-sizing: border-box;
   border-color: var(--primary);
   outline: 0;
-  /* border: 1px solid; */
+  border: 1px solid;
 }
 
 .btn-primary:hover {
-  /* color: var(--white); */
-  color: white;
+  color: var(--textLight);
 }
 
 .btn-primary::after {
@@ -2514,8 +2520,7 @@ a:hover {
   width: 150%;
   bottom: 0;
   border-radius: 2px;
-  /* background-color: var(--black); */
-  background-color: black;
+  background-color: var(--bgDark);
   transform: skewX(45deg) scale(0, 1);
   z-index: -1;
   transition: all .5s ease-out 0s;
@@ -2524,6 +2529,29 @@ a:hover {
 .btn-primary:hover::after {
   transform: skewX(45deg) scale(1, 1);
 }
+
+
+/* Button Reverse Effects */
+.btn-primary.reverse {
+  color: var(--textLight);
+}
+
+.btn-primary.reverse:hover {
+  color: var(--bgDark);
+}
+
+.btn-primary.reverse::after {
+  transform: skewX(45deg) scale(1, 1);
+}
+
+.btn-primary.reverse:hover::after {
+  transform: skewX(45deg) scale(0, 1);
+}
+
+
+
+
+
 
 /* Style Brands Images */
 .brands img{
