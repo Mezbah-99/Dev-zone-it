@@ -59,14 +59,12 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
   padding: 0.75rem 1.5rem;
 }
-/* .nav__cta:hover {
-  background: linear-gradient(
-    to left top,
-  );
-} */
+.nav__cta:hover {
+  background: linear-gradient(to right bottom, #00B0F9 30%, #06D889 60%,#FEC92C);
+}
 @media screen and (max-width: 1150px) {
   .nav__menu {
     position: fixed;

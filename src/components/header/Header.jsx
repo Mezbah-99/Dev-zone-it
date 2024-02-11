@@ -5,8 +5,10 @@ import LogoText from "./LogoText";
 import React, { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
 import "./Navbar.css";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const path = usePathname();
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -45,7 +47,9 @@ const Header = () => {
               <li className="nav__item">
                 <Link
                   href="/"
-                  className="nav__link"
+                  className={
+                    path === "/" ? "nav__link" + " nav__cta" : "nav__link"
+                  }
                   onClick={closeMenuOnMobile}
                 >
                   Home
@@ -54,7 +58,11 @@ const Header = () => {
               <li className="nav__item">
                 <Link
                   href="/contact"
-                  className="nav__link"
+                  className={
+                    path === "/contact"
+                      ? "nav__link" + " nav__cta"
+                      : "nav__link"
+                  }
                   onClick={closeMenuOnMobile}
                 >
                   Contact
@@ -63,7 +71,11 @@ const Header = () => {
               <li className="nav__item">
                 <Link
                   href="/about-us"
-                  className="nav__link"
+                  className={
+                    path === "/about-us"
+                      ? "nav__link" + " nav__cta"
+                      : "nav__link"
+                  }
                   onClick={closeMenuOnMobile}
                 >
                   About Us
@@ -72,7 +84,9 @@ const Header = () => {
               <li className="nav__item">
                 <Link
                   href="/blogs"
-                  className="nav__link"
+                  className={
+                    path === "/blogs" ? "nav__link" + " nav__cta" : "nav__link"
+                  }
                   onClick={closeMenuOnMobile}
                 >
                   Blogs
@@ -82,25 +96,36 @@ const Header = () => {
               <li className="nav__item">
                 <Link
                   href="/free-seminar"
-                  className="nav__link"
+                  className={
+                    path === "/free-seminar"
+                      ? "nav__link" + " nav__cta"
+                      : "nav__link"
+                  }
                   onClick={closeMenuOnMobile}
                 >
                   Free Seminar
                 </Link>
               </li>
               <li className="nav__item">
-                <Link href="/courses" className="nav__link nav__cta">
+                <Link
+                  href="/courses"
+                  className={
+                    path === "/courses"
+                      ? "nav__link" + " nav__cta"
+                      : "nav__link"
+                  }
+                >
                   Visit courses
                 </Link>
               </li>
             </ul>
             <div className="nav__close" id="nav-close" onClick={toggleMenu}>
-              <IoClose />
+              <IoClose style={{ fontSize: "40px" }} />
             </div>
           </div>
 
           <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-            <IoMenu />
+            <IoMenu style={{ fontSize: "40px" }} />
           </div>
         </nav>
       </header>

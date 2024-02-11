@@ -370,14 +370,14 @@ a:hover {
   color: #212529;
 }
 .site-mobile-menu .site-nav-wrap a:hover {
-  color: #ef4d4d;
+  color: var(--themeColor);
 }
 .site-mobile-menu .site-nav-wrap li {
   position: relative;
   display: block;
 }
 .site-mobile-menu .site-nav-wrap li.active > a {
-  color: #ef4d4d;
+  color: var(--themeColor);
 }
 .site-mobile-menu .site-nav-wrap .arrow-collapse {
   position: absolute;
@@ -483,7 +483,7 @@ a:hover {
   color: #000;
 }
 .sticky.site-navbar .site-navigation .site-menu > li > a:hover {
-  color: #ef4d4d;
+  color: var(--themeColor);
 }
 .nav-link {
   color: #000;
@@ -514,7 +514,7 @@ a:hover {
   margin-right: 16px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ef4d4d;
+  color: var(--themeColor);
   transition: 0.6s all ease;
 }
 .hero-section {
@@ -527,7 +527,7 @@ a:hover {
 }
 .btn-custom {
   color: #fff;
-  background: #ef4d4d;
+  background: var(--themeColor);
   font-size: 18px;
   line-height: 20px;
   font-weight: 600;
@@ -537,7 +537,7 @@ a:hover {
   transition: 0.6s all ease;
 }
 .btn-custom:hover {
-  color: #ef4d4d;
+  color: var(--themeColor);
   background: #fff;
   border: none;
   transition: 0.6s all ease;
@@ -577,7 +577,7 @@ a:hover {
 /*Feature part*/
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  background-color: #ef4d4d;
+  background-color: var(--themeColor);
   box-shadow: 6px 6px 20px rgba(84, 116, 164, 0.1);
 }
 .feature h1 {
@@ -597,7 +597,7 @@ a:hover {
   font-weight: 700;
 }
 .menu-style:hover {
-  background-color: #ef4d4d;
+  background-color: var(--themeColor);
   color: #fff !important;
   /*border-radius: 12px;*/
   box-shadow: 6px 6px 20px rgba(84, 116, 164, 0.1);
@@ -772,7 +772,7 @@ a:hover {
 }
 .btn-trendy {
   color: #fff;
-  background: #ef4d4d;
+  background: var(--themeColor);
   font-size: 14px;
   line-height: 28px;
   font-weight: 600;
@@ -837,7 +837,7 @@ a:hover {
   height: 400px;
   margin-top: -242px;
   background-image: url("/images/vector.jpg");
-  background-color: #ef4d4d;
+  background-color: var(--themeColor);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1451,7 +1451,7 @@ a:hover {
   line-height: 28px;
 }
 .about-content a {
-  color: #ef4d4d;
+  color: var(--themeColor);
   text-decoration: none;
 }
 .about-img-position {
@@ -1485,7 +1485,7 @@ a:hover {
 }
 .about-support-content a:hover {
   background: transparent;
-  color: #ef4d4d !important;
+  color: var(--themeColor) !important;
 }
 /*Team*/
 .team {
@@ -1532,7 +1532,7 @@ a:hover {
 }
 .arrow-about {
   font-size: 22px;
-  background-color: #ef4d4d;
+  background-color: var(--themeColor);
   padding: 13px 15px;
   border-radius: 50px;
   color: #fff;
@@ -2005,7 +2005,7 @@ a:hover {
   color: #091423 !important;
 }
 .nav-black:hover {
-  color: #ef4d4d !important;
+  color: var(--themeColor) !important;
 }
 .blog-details-img {
   width: 1195px;
@@ -2273,7 +2273,7 @@ a:hover {
   line-height: 29px;
 }
 .icon-course {
-  color: #ef4d4d;
+  color: var(--themeColor);
   font-size: 20px;
 }
 .opacity-c {
@@ -2470,11 +2470,11 @@ a:hover {
   transition: .5s all ease;
 }
 .popularCourses .nav-link.active{
-  background: #ED1C24;
+  background: var(--themeColor);
   color: #fff;
 }
 .popularCourses .nav-link:hover{
-  background: #ED1C24;
+  background: var(--themeColor);
   color: #fff;
 }
 
@@ -2556,4 +2556,11 @@ a:hover {
 /* Style Brands Images */
 .brands img{
   height: 90px;
+}
+.swiper-navigation svg{
+  transition: .3s all ease-out;
+}
+.swiper-navigation svg:hover{
+  background: var(--themeColor);
+  color: var(--textLight);
 }
