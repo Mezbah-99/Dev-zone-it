@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const IncludedServices = () => {
@@ -18,9 +20,10 @@ const IncludedServices = () => {
                 উপস্থিত এক্সপার্ট কাউন্সেলরের সঙ্গে কথা বলে আপনি যথাযথ কোর্স
                 বেছে নেওয়ার সিদ্ধান্ত নিতে পারবেন সহজেই।
               </p>
-              <a
-                href="seminar.html"
-                className="btn btn-custom mt-4 mb-4 border"
+              <Link
+                href="/free-seminar"
+                className="btn-primary reverse"
+                style={{maxHeight: "50px", width: "250px"}}
               >
                 আপকামিং ফ্রি সেমিনার
                 <img
@@ -28,23 +31,29 @@ const IncludedServices = () => {
                   className="img-fluid button-img"
                   alt=""
                 />
-              </a>
+              </Link>
             </div>
             <div className="col-lg-5 col-md-12">
-              <img
-                src="images/seminar1.png"
-                className="img-fluid mb-3"
+              <Image
+              width={500}
+              height={200}
+                src="/images/seminar1.png"
+                className="img-fluid mb-3 w-100"
                 alt=""
               />
               <div className="d-flex">
-                <img
-                  src="images/seminar2.png"
-                  className="img-fluid seminar-img w-md-50 me-3"
+                <Image
+                width={200}
+                height={200}
+                  src="/images/seminar2.png"
+                  className="img-fluid seminar-img w-md-50 me-3 w-100"
                   alt=""
                 />
-                <img
-                  src="images/seminar3.png"
-                  className="img-fluid seminar-img w-md-50"
+                <Image
+                width={200}
+                height={200}
+                  src="/images/seminar3.png"
+                  className="img-fluid seminar-img w-md-50 w-100"
                   alt=""
                 />
               </div>

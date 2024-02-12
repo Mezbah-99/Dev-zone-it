@@ -1,0 +1,97 @@
+@media screen and (min-width: 991px) and (max-width: 1199px) {
+    .course-details-content ul li {
+      font-size: 17px;
+    }
+    .sm-me-0 {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .course-details-content ul li {
+      font-size: 11px;
+    }
+    .course-details-img {
+      width: 500px;
+      height: 350px;
+    }
+    .course-fee {
+      font-size: 17px;
+    }
+    .course-btn-sm {
+      padding-left: 1em !important;
+      padding-right: 1em !important;
+    }
+    .single-course-h1 {
+      font-size: 35px;
+    }
+    .single-course-h2 {
+      font-size: 14px;
+    }
+    .courses-h2 {
+      font-size: 30px;
+    }
+    .courses-support {
+      font-size: 24px;
+    }
+    .courses-h6 {
+      font-size: 15px;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .single-course-h1 {
+      font-size: 40px;
+    }
+    .course-curriculum-body ul li {
+      font-size: 14px;
+    }
+    .course-sm-pe {
+      padding-right: 0 !important;
+    }
+    .courses-h2 {
+      font-size: 30px;
+    }
+    .courses-support {
+      font-size: 26px;
+    }
+  }
+  @media screen and (min-width: 480px) and (max-width: 575px) {
+    .single-course-h1 {
+      font-size: 34px;
+    }
+    .courses-h2 {
+      font-size: 26px;
+    }
+    .courses-support {
+      font-size: 24px;
+    }
+    .course-curriculum-body ul li {
+      font-size: 13px;
+    }
+    .course-sm-pe {
+      padding-right: 0 !important;
+    }
+  }
+  @media screen and (min-width: 350px) and (max-width: 479px) {
+    .single-course-title {
+      font-size: 17px;
+    }
+    .single-course-h1 {
+      font-size: 30px;
+    }
+    .courses-h2 {
+      font-size: 26px;
+    }
+    .courses-support {
+      font-size: 24px;
+    }
+    .course-curriculum-body ul li {
+      font-size: 13px;
+    }
+    .course-sm-pe {
+      padding-right: 0 !important;
+    }
+    .course-sm-ps {
+      padding-left: 0 !important;
+    }
+  }
+  

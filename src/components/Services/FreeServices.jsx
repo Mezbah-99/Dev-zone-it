@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const FreeServices = () => {
@@ -7,8 +9,10 @@ const FreeServices = () => {
         <div className="row">
           <div className="col-lg-6 col-md-5 mt-3">
             <div className="about-support text-center pt-5 position-relative">
-              <img
-                src="images/about-images/1.png"
+              <Image
+              width={400}
+              height={500}
+                src="/images/about-images/1.png"
                 className="img-fluid about-img-left"
                 alt=""
               />
@@ -31,13 +35,14 @@ const FreeServices = () => {
                 প্রদান করে। এবং এটি আজীবনের জন্য বিনামূল্যে!
               </p>
               {/*                    <a href="" class="btn btn-custom text-white">সহায়তা নিন</a>*/}
-              <a
-                href="contact.html"
-                className="btn btn-danger btn-sm px-4 py-3 text-white hero-content img"
+              <Link
+                href="#"
+                className="btn-primary w-50"
+                style={{maxHeight: "50px"}}
               >
                 সহায়তা নিন
-                <img src="images/button.png" className="img-fluid" alt="" />
-              </a>
+                {/* <img src="images/button.png" className="img-fluid" alt="" /> */}
+              </Link>
             </div>
           </div>
         </div>

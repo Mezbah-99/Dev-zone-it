@@ -1,7 +1,12 @@
+import { fakeCourses } from "@/utils/fakeData";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { LuMonitorDot } from "react-icons/lu";
+import { MdMoreTime } from "react-icons/md";
 
 const TrendingCourses = () => {
+  const courses = fakeCourses;
   return (
     <section className="py-5 trendy">
       <div className="container">
@@ -15,84 +20,37 @@ const TrendingCourses = () => {
           </div>
         </div>
         <div className="row pt-5">
-          <div className="col-md-4 mb-sm-5 xs-mb">
-            <img src="images/f3.png" className="img-fluid" alt="" />
-            <div className="card border-0 trendy-content">
-              <div className="card-body feature-part">
-                <h2 className="">সিপিএ মার্কেটিং</h2>
-                <ul className="d-flex mt-3 m-0 p-0">
-                  <li className="ps-2">
-                    <i className="fa fa-display course-icon" />
-                    টোটাল ক্লাসঃ ৩০টি
-                  </li>
-                  <li className="ps-5">
-                    <i className="fa-regular fa-clock course-icon" />
-                    টোটাল ৬০+ ঘন্টা
-                  </li>
-                </ul>
-                <Link href="" className="btn btn-trendy mt-3 border">
-                  ব্রাউজ কোর্স
-                  <img
-                    src="images/course-button.png"
-                    className="img-fluid button-img"
-                    alt=""
-                  />
-                </Link>
+          {courses?.slice(0, 3).map((course) => (
+            <div key={course.id} className="col-md-4 mb-sm-5 xs-mb">
+              <Image
+                    width={400}
+                    height={300} src={course.img} className="img-fluid w-100" alt="" />
+              <div className="card border-0 trendy-content">
+                <div className="card-body feature-part">
+                  <h2 className="">{course.title}</h2>
+                  <ul className="d-flex mt-3 m-0 p-0">
+                  <li className="d-flex align-items-center justify-content-center gap-1">
+                        <LuMonitorDot style={{ fontSize: "20px" }} />
+                        টোটাল ক্লাসঃ {course.course_details.total_class}
+                        টি
+                      </li>
+                      <li className="ps-3 d-flex align-items-center justify-content-center gap-1">
+                        <MdMoreTime style={{ fontSize: "20px" }} />
+                        টোটাল {course.course_details.total_class}+ ঘন্টা
+                      </li>
+                  </ul>
+                  <Link href="/course-details" className="btn-primary mt-3 reverse">
+                    ব্রাউজ কোর্স
+                    <img
+                      src="images/course-button.png"
+                      className="img-fluid button-img"
+                      alt=""
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 mb-sm-5 xs-mb">
-            <img src="images/f6.png" className="img-fluid" alt="" />
-            <div className="card border-0 trendy-content">
-              <div className="card-body feature-part">
-                <h2 className="">প্রফেশনাল গ্রাফিক ডিজাইন</h2>
-                <ul className="d-flex mt-3 m-0 p-0">
-                  <li className="ps-2">
-                    <i className="fa fa-display course-icon" />
-                    টোটাল ক্লাসঃ ৩০টি
-                  </li>
-                  <li className="ps-5">
-                    <i className="fa-regular fa-clock course-icon" />
-                    টোটাল ৬০+ ঘন্টা
-                  </li>
-                </ul>
-                <Link href="" className="btn btn-trendy mt-3 border">
-                  ব্রাউজ কোর্স
-                  <img
-                    src="images/course-button.png"
-                    className="img-fluid button-img"
-                    alt=""
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-sm-5">
-            <img src="images/f5.png" className="img-fluid" alt="" />
-            <div className="card border-0 trendy-content">
-              <div className="card-body feature-part">
-                <h2 className="">ডিজিটাল মার্কেটিং</h2>
-                <ul className="d-flex mt-3 m-0 p-0">
-                  <li className="ps-2">
-                    <i className="fa fa-display course-icon" />
-                    টোটাল ক্লাসঃ ৩০টি
-                  </li>
-                  <li className="ps-5">
-                    <i className="fa-regular fa-clock course-icon" />
-                    টোটাল ৬০+ ঘন্টা
-                  </li>
-                </ul>
-                <Link href="#" className="btn btn-trendy mt-3 border">
-                  ব্রাউজ কোর্স
-                  <img
-                    src="images/course-button.png"
-                    className="img-fluid button-img"
-                    alt=""
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

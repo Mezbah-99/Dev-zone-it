@@ -1,10 +1,10 @@
-:root{
-  --themeColor: #06D889;
-  --textLight: #EAF1F5;
+:root {
+  --themeColor: #06d889;
+  --textLight: #eaf1f5;
   --bgDark: #000000;
-  --themeColor2: #00BFF6;
+  --themeColor2: #00bff6;
+  --themeColor3: #fab60b;
 }
-
 
 /* @font-face {
   src: local("font/SutonnyMJ-Bold.ttf");
@@ -2367,117 +2367,20 @@ a:hover {
 .course-support-bg {
   background: #fbfbff !important;
 }
-@media screen and (min-width: 991px) and (max-width: 1199px) {
-  .course-details-content ul li {
-    font-size: 17px;
-  }
-  .sm-me-0 {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .course-details-content ul li {
-    font-size: 11px;
-  }
-  .course-details-img {
-    width: 500px;
-    height: 350px;
-  }
-  .course-fee {
-    font-size: 17px;
-  }
-  .course-btn-sm {
-    padding-left: 1em !important;
-    padding-right: 1em !important;
-  }
-  .single-course-h1 {
-    font-size: 35px;
-  }
-  .single-course-h2 {
-    font-size: 14px;
-  }
-  .courses-h2 {
-    font-size: 30px;
-  }
-  .courses-support {
-    font-size: 24px;
-  }
-  .courses-h6 {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .single-course-h1 {
-    font-size: 40px;
-  }
-  .course-curriculum-body ul li {
-    font-size: 14px;
-  }
-  .course-sm-pe {
-    padding-right: 0 !important;
-  }
-  .courses-h2 {
-    font-size: 30px;
-  }
-  .courses-support {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 575px) {
-  .single-course-h1 {
-    font-size: 34px;
-  }
-  .courses-h2 {
-    font-size: 26px;
-  }
-  .courses-support {
-    font-size: 24px;
-  }
-  .course-curriculum-body ul li {
-    font-size: 13px;
-  }
-  .course-sm-pe {
-    padding-right: 0 !important;
-  }
-}
-@media screen and (min-width: 350px) and (max-width: 479px) {
-  .single-course-title {
-    font-size: 17px;
-  }
-  .single-course-h1 {
-    font-size: 30px;
-  }
-  .courses-h2 {
-    font-size: 26px;
-  }
-  .courses-support {
-    font-size: 24px;
-  }
-  .course-curriculum-body ul li {
-    font-size: 13px;
-  }
-  .course-sm-pe {
-    padding-right: 0 !important;
-  }
-  .course-sm-ps {
-    padding-left: 0 !important;
-  }
-}
 
 /* Filter section */
-.popularCourses .nav-link{
+.popularCourses .nav-link {
   padding: 20px !important;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
 }
-.popularCourses .nav-link.active{
+.popularCourses .nav-link.active {
   background: var(--themeColor);
   color: #fff;
 }
-.popularCourses .nav-link:hover{
+.popularCourses .nav-link:hover {
   background: var(--themeColor);
   color: #fff;
 }
-
 
 /* Animation Button  */
 .btn-primary {
@@ -2485,7 +2388,7 @@ a:hover {
   height: 60px !important;
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
   color: #000;
   border-radius: 5px;
   background-color: var(--themeColor);
@@ -2493,7 +2396,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .5s;
+  transition: 0.5s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -2525,13 +2428,12 @@ a:hover {
   background-color: var(--bgDark);
   transform: skewX(45deg) scale(0, 1);
   z-index: -1;
-  transition: all .5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
 .btn-primary:hover::after {
   transform: skewX(45deg) scale(1, 1);
 }
-
 
 /* Button Reverse Effects */
 .btn-primary.reverse {
@@ -2550,23 +2452,52 @@ a:hover {
   transform: skewX(45deg) scale(0, 1);
 }
 
-a.btn-primary{
+a.btn-primary {
   max-height: 40px;
   padding: 0px 20px;
   border: 1px solid var(--themeColor);
 }
 
-
-
-
 /* Style Brands Images */
-.brands img{
+.brands img {
   height: 90px;
 }
-.swiper-navigation svg{
-  transition: .3s all ease-out;
+.swiper-navigation svg {
+  transition: 0.3s all ease-out;
 }
-.swiper-navigation svg:hover{
+.swiper-navigation svg:hover {
   background: var(--themeColor);
   color: var(--textLight);
+}
+
+/* popularCourses tab style  */
+.popularCourses ul {
+  gap: 30px;
+}
+
+/* Image style  */
+img {
+  object-fit: cover;
+}
+
+/* Custom scroll bar  */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(196, 238, 196, 0.655);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--themeColor);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--themeColor2);
 }

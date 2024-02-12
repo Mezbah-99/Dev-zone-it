@@ -1,0 +1,109 @@
+.popularCourses .nav-link {
+  height: 60px !important;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: var(--textLight);
+  border-radius: 5px;
+  background-color: var(--themeColor);
+  max-height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: var(--primary);
+  outline: 0;
+  border: 1px solid var(--themeColor);
+}
+
+.popularCourses .nav-link:hover {
+  color: var(--bgDark);
+}
+
+.popularCourses .nav-link::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 15%;
+  right: -20%;
+  top: -4%;
+  height: 150%;
+  width: 150%;
+  bottom: 0;
+  border-radius: 2px;
+  background-color: var(--bgDark);
+  transform: skewX(45deg) scale(1, 1);
+  z-index: -1;
+  transition: all 0.5s ease-out 0s;
+}
+
+.popularCourses .nav-link:hover::after {
+  transform: skewX(45deg) scale(0, 1);
+}
+
+
+
+
+
+
+/* Acitive Link */
+
+.popularCourses .nav-link.active {
+  /* font-family: var(--font-secondary); */
+  height: 60px !important;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #000;
+  border-radius: 5px;
+  background-color: var(--themeColor);
+  max-height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-color: var(--primary);
+  outline: 0;
+  border: 1px solid var(--themeColor);
+}
+
+.popularCourses .nav-link.active:hover {
+  color: var(--textLight);
+}
+
+.popularCourses .nav-link.active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 15%;
+  right: -20%;
+  top: -4%;
+  height: 150%;
+  width: 150%;
+  bottom: 0;
+  border-radius: 2px;
+  background-color: var(--bgDark);
+  transform: skewX(45deg) scale(0, 1);
+  z-index: -1;
+  transition: all 0.5s ease-out 0s;
+}
+
+.popularCourses .nav-link.active:hover::after {
+  transform: skewX(45deg) scale(1, 1);
+}

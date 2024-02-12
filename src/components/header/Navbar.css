@@ -129,7 +129,7 @@
 }
 .nav__list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   column-gap: 2.5rem;
   align-items: center;
   justify-content: center;

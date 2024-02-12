@@ -1,15 +1,18 @@
-"use client";
+"use client"
 import { fakeCourses } from "@/utils/fakeData";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { LuMonitorDot } from "react-icons/lu";
 import { MdMoreTime } from "react-icons/md";
+import "./PopularItem.css"
 
 const PopularItem = () => {
   const courses = fakeCourses;
   const pinCourse = courses[9];
+
   return (
     <div className="popularCourses">
       <Tabs
@@ -48,7 +51,7 @@ const PopularItem = () => {
                   <Link
                     href="course-details.html"
                     className="btn-primary w-50 mt-3 reverse"
-                    style={{maxHeight: "60px"}}
+                    style={{ maxHeight: "60px" }}
                   >
                     কোর্স ফিঃ {pinCourse.price} টাকা
                   </Link>
@@ -65,7 +68,7 @@ const PopularItem = () => {
                           src={course.img}
                           className="img-fluid w-100"
                           alt={course.title}
-                          style={{height: "210px"}}
+                          style={{ height: "210px" }}
                         />
                         <div className="card mb-sm-5 xs-mb">
                           <div className="card-body feature-part">
